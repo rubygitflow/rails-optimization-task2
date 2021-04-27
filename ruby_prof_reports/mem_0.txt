@@ -394,4 +394,3 @@ Allocated String Report
         22  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
          5  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
          1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
-

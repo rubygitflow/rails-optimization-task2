@@ -2,7 +2,7 @@ require_relative 'task-2.rb'
 require 'benchmark'
 
 def print_memory_usage
-  "%d MB" % (`ps -o rss= -p #{Process.pid}`.to_i / 1024)
+  "%d KB" % (`ps -o rss= -p #{Process.pid}`.to_i)
 end
 
 puts "rss at start: #{print_memory_usage}"

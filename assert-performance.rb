@@ -52,10 +52,10 @@ describe 'Performance' do
         expect { |n, _i| linear_work(n) }.to perform_linear.in_range(sizes)
     end
 
-    it 'uses less than 2 Mb' do
+    it 'uses less than 1 Mb' do
       expect(
         mem_counter
-      ).to be < 2000
+      ).to be < 250
     end
   end
 end

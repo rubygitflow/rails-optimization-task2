@@ -1,4 +1,5 @@
-# 
+# frozen_string_literal: true
+
 require 'json'
 require 'pry'
 require 'date'
@@ -6,20 +7,20 @@ require 'ruby-progressbar'
 
 def parse_user(cols)
   {
-    'id' => cols[1],
-    'first_name' => cols[2],
-    'last_name' => cols[3],
-    'age' => cols[4]
+    id: cols[1],
+    first_name: cols[2],
+    last_name: cols[3],
+    age: cols[4]
   }
 end
 
 def parse_session(cols)
   {
-    'user_id' => cols[1],
-    'session_id' => cols[2],
-    'browser' => cols[3],
-    'time' => cols[4].to_i,
-    'date' => cols[5][0...-1]
+    user_id: cols[1],
+    session_id: cols[2],
+    browser: cols[3],
+    time: cols[4].to_i,
+    date: cols[5][0...-1]
   }
 end
 
@@ -69,7 +70,7 @@ def work(filename = 'data.txt', disable_gc: true)
       end
       inp += 1 
     end
-  end
+ end
 
   # Отчёт в json
   #   - Сколько всего юзеров +
@@ -96,13 +97,13 @@ def work(filename = 'data.txt', disable_gc: true)
   browsersList = uniqueBrowsers.uniq.sort
 
   # Подсчёт количества уникальных браузеров
-  report['uniqueBrowsersCount'] = browsersList.count
+  report[:uniqueBrowsersCount] = browsersList.count
 
-  report['totalSessions'] = sessions.values.flatten.count
+  report[:totalSessions] = sessions.values.flatten.count
 
-  report['allBrowsers'] = browsersList.join(',')
+  report[:allBrowsers] = browsersList.join(',')
 
-  report['usersStats'] = {}
+  report[:usersStats] = {}
 
   if ENV['PRINT_STATUS']=='TRUE'
     puts("users.count=#{users.count}") 
@@ -122,27 +123,27 @@ def work(filename = 'data.txt', disable_gc: true)
 
   out = 0
   users.each do |user|
-    user_sessions = sessions[user['id']]
-    user_key = "#{user['first_name']} #{user['last_name']}"
+    user_sessions = sessions[user[:id]]
+    user_key = "#{user[:first_name]} #{user[:last_name]}".to_sym
 
-    user_sessions_map_time = user_sessions.map {|s| s['time']}
-    user_sessions_map_browser = user_sessions.map {|s| s['browser']}.sort
-    report['usersStats'][user_key] ||= {}
-    report['usersStats'][user_key].merge!(
+    user_sessions_map_time = user_sessions.map {|s| s[:time]}
+    user_sessions_map_browser = user_sessions.map {|s| s[:browser]}.sort
+    report[:usersStats][user_key] ||= {}
+    report[:usersStats][user_key].merge!(
       # Собираем количество сессий по пользователям
-      { 'sessionsCount' => user_sessions.count },
+      { sessionsCount: user_sessions.count },
       # Собираем количество времени по пользователям
-      { 'totalTime' => user_sessions_map_time.sum.to_s + ' min.' },
+      { totalTime: user_sessions_map_time.sum.to_s + ' min.' },
       # Выбираем самую длинную сессию пользователя
-      { 'longestSession' => user_sessions_map_time.max.to_s + ' min.' },
+      { longestSession: user_sessions_map_time.max.to_s + ' min.' },
       # Браузеры пользователя через запятую
-      { 'browsers' => user_sessions_map_browser.join(', ') },
+      { browsers: user_sessions_map_browser.join(', ') },
       # Хоть раз использовал IE?
-      { 'usedIE' => user_sessions_map_browser.any? { |b| b =~ /INTERNET EXPLORER/ } },
+      { usedIE: user_sessions_map_browser.any? { |b| b =~ /INTERNET EXPLORER/ } },
       # Всегда использовал только Chrome?
-      { 'alwaysUsedChrome' => user_sessions_map_browser.all? { |b| b =~ /CHROME/ } },
+      { alwaysUsedChrome: user_sessions_map_browser.all? { |b| b =~ /CHROME/ } },
       # Даты сессий через запятую в обратном порядке в формате iso8601
-      { 'dates' => user_sessions.map{|s| s['date']}.sort.reverse }
+      { dates: user_sessions.map{|s| s[:date]}.sort.reverse }
     )
     if progressbar_out
       if tile_out == 0 
