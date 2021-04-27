@@ -18,6 +18,17 @@ def linear_work(size)
   work(filename = "data_#{size}.txt", disable_gc: false)
 end
 
+def memory_usage
+  `ps -o rss= -p #{Process.pid}`.to_i
+end
+
+def mem_counter
+  before = memory_usage
+  work(filename = 'data_2000.txt', disable_gc: false)
+  after = memory_usage
+  after - before
+end
+
 describe 'Performance' do
   describe 'linear work' do
     let(:time) { 20 }
@@ -36,9 +47,15 @@ describe 'Performance' do
       }.to perform_at_least(ips).within(measurement_time_seconds).warmup(warmup_seconds).ips
     end
 
-    # let(:sizes) { [16000, 32000, 64000] }
+    let(:sizes) { [16000, 32000, 64000] }
     it 'performs linear' do
         expect { |n, _i| linear_work(n) }.to perform_linear.in_range(sizes)
+    end
+
+    it 'uses less than 2 Mb' do
+      expect(
+        mem_counter
+      ).to be < 2000
     end
   end
 end
