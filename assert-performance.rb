@@ -31,8 +31,8 @@ end
 
 describe 'Performance' do
   describe 'linear work' do
-    let(:time) { 20 }
-    it 'works under 20 ms' do
+    let(:time) { 85 }
+    it 'works under 85 ms' do
       expect {
         worker
       }.to perform_under(time).ms.warmup(2).times.sample(10).times
@@ -40,8 +40,8 @@ describe 'Performance' do
 
     let(:measurement_time_seconds) { 1 }
     let(:warmup_seconds) { 0.2 }
-    let(:ips) { 50 }
-    it 'works faster than 50 ips' do
+    let(:ips) { 12 }
+    it 'works faster than 12 ips' do
       expect {
         worker
       }.to perform_at_least(ips).within(measurement_time_seconds).warmup(warmup_seconds).ips
@@ -52,10 +52,10 @@ describe 'Performance' do
         expect { |n, _i| linear_work(n) }.to perform_linear.in_range(sizes)
     end
 
-    it 'uses less than 1 Mb' do
+    it 'uses less than 1 Kb' do
       expect(
         mem_counter
-      ).to be < 250
+      ).to eq(0)
     end
   end
 end

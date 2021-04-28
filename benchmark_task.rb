@@ -8,7 +8,7 @@ end
 puts "rss at start: #{print_memory_usage}"
 
 time = Benchmark.realtime do
-  work(filename = 'data_32000.txt', disable_gc: true)
+  work(filename = 'data_32000.txt', disable_gc: false)
 end
 
 puts "Finish in #{time.round(2)}"
