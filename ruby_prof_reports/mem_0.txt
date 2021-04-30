@@ -1,0 +1,396 @@
+Total allocated: 2.67 MB (31160 objects)
+Total retained:  0 B (0 objects)
+
+allocated memory by gem
+-----------------------------------
+   2.67 MB  other
+
+allocated memory by file
+-----------------------------------
+   2.67 MB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb
+   40.00 B  task_mem.rb
+
+allocated memory by location
+-----------------------------------
+ 947.24 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+ 282.41 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:24
+ 198.41 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:158
+ 164.76 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:53
+ 138.50 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:145
+ 101.40 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:139
+  98.77 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:141
+  91.87 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+  91.87 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+  81.64 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:143
+  67.24 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:22
+  66.35 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:130
+  60.37 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:129
+  59.76 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+  53.59 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:131
+  53.59 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:14
+  24.54 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:128
+  22.06 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:101
+  17.74 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:31
+  14.43 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:105
+  14.43 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:30
+  12.76 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:126
+   3.53 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:29
+   3.32 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:96
+   2.64 kB  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:103
+  168.00 B  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:91
+   80.00 B  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:107
+   80.00 B  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:157
+   80.00 B  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:34
+   80.00 B  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:36
+   80.00 B  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:89
+   40.00 B  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:32
+   40.00 B  task_mem.rb:5
+
+allocated memory by class
+-----------------------------------
+   1.15 MB  String
+ 793.94 kB  Hash
+ 663.64 kB  Array
+  48.38 kB  MatchData
+  16.85 kB  File
+  224.00 B  JSON::Ext::Generator::State
+   72.00 B  Thread::Mutex
+
+allocated objects by gem
+-----------------------------------
+     31160  other
+
+allocated objects by file
+-----------------------------------
+     31159  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb
+         1  task_mem.rb
+
+allocated objects by location
+-----------------------------------
+     15681  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+      2003  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:53
+      1681  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:22
+      1681  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:24
+      1558  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:145
+      1276  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+      1276  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+       957  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:139
+       920  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:129
+       793  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:143
+       754  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:141
+       638  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:130
+       634  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+       319  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:126
+       319  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:128
+       319  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:131
+       319  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:14
+         8  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:158
+         3  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:96
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:101
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:103
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:107
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:157
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:34
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:36
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:89
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:105
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:29
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:30
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:31
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:32
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:91
+         1  task_mem.rb:5
+
+allocated objects by class
+-----------------------------------
+     21508  String
+      4804  Array
+      4556  Hash
+       288  MatchData
+         2  File
+         1  JSON::Ext::Generator::State
+         1  Thread::Mutex
+
+retained memory by gem
+-----------------------------------
+NO DATA
+
+retained memory by file
+-----------------------------------
+NO DATA
+
+retained memory by location
+-----------------------------------
+NO DATA
+
+retained memory by class
+-----------------------------------
+NO DATA
+
+retained objects by gem
+-----------------------------------
+NO DATA
+
+retained objects by file
+-----------------------------------
+NO DATA
+
+retained objects by location
+-----------------------------------
+NO DATA
+
+retained objects by class
+-----------------------------------
+NO DATA
+
+
+Allocated String Report
+-----------------------------------
+      2001  ","
+      2000  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:103
+
+      1681  "session"
+      1681  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+
+       638  " min."
+       319  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+       319  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+
+       346  "0"
+       346  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+
+       319  ", "
+       319  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:139
+
+       319  "user"
+       319  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+
+       309  "1"
+       308  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+       281  "2"
+       279  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+
+       247  "3"
+       246  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+       194  "4"
+       193  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+       173  "5"
+       172  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+       148  "6"
+       145  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+       117  "7"
+       117  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+
+        74  "8"
+        73  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        46  "103"
+        32  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+        12  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        43  "113"
+        28  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+        14  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        39  "92"
+        30  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         7  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        38  "9"
+        35  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        37  "86"
+        29  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         6  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        37  "95"
+        26  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         9  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        36  "118"
+        23  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+        12  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        36  "81"
+        27  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         7  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        36  "CHROME 5"
+        18  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:143
+        18  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+
+        34  "14"
+        30  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        33  "114"
+        18  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+        14  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        33  "116"
+        17  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+        14  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        33  "52"
+        28  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        33  "CHROME 50"
+        16  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:143
+        16  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:139
+
+        32  "13"
+        28  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        32  "37"
+        31  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        32  "98"
+        23  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         8  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        31  "51"
+        28  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        31  "70"
+        28  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        31  "89"
+        27  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         3  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        30  "101"
+        19  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+        10  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        30  "104"
+        21  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         4  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         4  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        30  "117"
+        18  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+        10  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        30  "67"
+        26  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        30  "85"
+        24  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         4  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        29  "29"
+        26  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        29  "35"
+        28  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        29  "73"
+        26  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        29  "94"
+        22  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         5  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        29  "96"
+        18  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         9  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        28  "112"
+        18  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         9  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        28  "31"
+        27  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        28  "57"
+        26  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        28  "71"
+        21  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         4  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         2  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:135
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        28  "87"
+        22  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         5  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60
+
+        28  "99"
+        22  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:54
+         5  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:137
+         1  /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:60

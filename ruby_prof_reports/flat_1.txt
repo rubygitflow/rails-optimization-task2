@@ -1,0 +1,57 @@
+Measure Mode: wall_time
+Thread ID: 80
+Fiber ID: 60
+Total: 0.676597
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 31.41      0.406     0.213     0.000     0.193        1   IO#each_line                   
+ 14.46      0.261     0.098     0.000     0.163        1   Array#each                     
+ 11.22      0.116     0.076     0.000     0.040     1681   Object#parse_session           /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:17
+  9.54      0.065     0.065     0.000     0.000      957   Array#map                      
+  7.42      0.050     0.050     0.000     0.000     2000   String#split                   
+  3.06      0.021     0.021     0.000     0.000     1681   String#[]                      
+  2.92      0.020     0.020     0.000     0.000      319   Array#any?                     
+  2.88      0.019     0.019     0.000     0.000     1681   String#to_i                    
+  2.87      0.019     0.019     0.000     0.000      639   Array#sort                     
+  2.81      0.019     0.019     0.000     0.000     1681   String#upcase!                 
+  1.85      0.013     0.013     0.000     0.000      319   Array#all?                     
+  1.26      0.009     0.009     0.000     0.000      319   String#to_sym                  
+  1.15      0.008     0.008     0.000     0.000      319   Object#parse_user              /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:8
+  1.07      0.007     0.007     0.000     0.000      638   Integer#to_s                   
+  1.06      0.007     0.007     0.000     0.000      638   String#+                       
+  0.84      0.006     0.006     0.000     0.000      320   Array#join                     
+  0.79      0.005     0.005     0.000     0.000        1   JSON::Ext::Generator::GeneratorMethods::Hash#to_json 
+  0.68      0.005     0.005     0.000     0.000      319   Hash#merge!                    
+  0.52      0.003     0.003     0.000     0.000      322   Array#count                    
+  0.51      0.003     0.003     0.000     0.000      319   Array#sum                      
+  0.51      0.003     0.003     0.000     0.000      319   Array#max                      
+  0.48      0.003     0.003     0.000     0.000      319   Array#reverse                  
+  0.22      0.001     0.001     0.000     0.000        1   Array#uniq                     
+  0.20      0.001     0.001     0.000     0.000        1   Array#flatten                  
+  0.11      0.001     0.001     0.000     0.000        1   <Class::IO>#write              
+  0.10      0.676     0.001     0.000     0.676        1   Object#work                    /home/dekan/Work/Ruby/rails-optimization-examples/rails-optimization-task2/task-2.rb:27
+  0.03      0.000     0.000     0.000     0.000        6   <Object::Object>#[]            
+  0.02      0.677     0.000     0.000     0.676        1   [global]#                      task_cpu.rb:7
+  0.01      0.000     0.000     0.000     0.000        1   File#initialize                
+  0.00      0.000     0.000     0.000     0.000        1   <Class::IO>#open               
+  0.00      0.000     0.000     0.000     0.000        1   Hash#values                    
+  0.00      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::State#initialize 
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
